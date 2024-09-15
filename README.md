@@ -25,27 +25,79 @@ The Histogram of gray scale image and color image is shown.
 
 
 ## Program:
-```python
-# Developed By: 
-# Register Number: 
+```
+# Developed By: NIVETHA.K
+# Register Number: 212222230102
 
+pip install opencv-python
 
+import cv2
+import matplotlib.pyplot as plt
+gray_image = cv2.imread('gray_image.jpeg')
+color_image = cv2.imread('color_image.jpg')
+cv2.imshow("Gray image",gray_image)
+cv2.imshow("color image",color_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
+import numpy as np
+gray_image=cv2.imread('gray_image.jpeg')
+import matplotlib.pyplot as plt 
+gray_hist=cv2.calcHist(gray_image,[0],None,[255],[0,255])
+plt.figure()
+plt.imshow(gray_image)
+plt.show()
+plt.title("Histogram")
+plt.xlabel("Grayscale value")
+plt.ylabel("pixel count")
+plt.stem(gray_hist)
+plt.show()
 
+import numpy as np
+color_image=cv2.imread('color_image.jpg')
+import matplotlib.pyplot as plt 
+color_hist=cv2.calcHist(color_image,[0],None,[255],[0,255])
+plt.figure()
+plt.imshow(color_image)
+plt.show()
+plt.title("Histogram")
+plt.xlabel("Colorscale value")
+plt.ylabel("pixel count")
+plt.stem(color_hist)
+plt.show()
 
+import cv2
+gray_image = cv2.imread("gray_image.jpeg",0)
+cv2.imshow('Grey Scale Image',gray_image)
+equ = cv2.equalizeHist(gray_image)
+cv2.imshow("Equalized Image",equ)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 ```
 ## Output:
 ### Input Grayscale Image and Color Image
 
+![image](https://github.com/user-attachments/assets/39204acc-790b-488d-8c76-ca8c110b456b)
+
+![image](https://github.com/user-attachments/assets/5f79b7fa-f016-4bb4-a1f8-92c2990aedd1)
+
 
 ### Histogram of Grayscale Image and any channel of Color Image
 
+![image](https://github.com/user-attachments/assets/c913b3ad-6e61-4a7e-9241-802e647e8608)
 
+![image](https://github.com/user-attachments/assets/2107aaf5-03bd-4b59-9c2e-e770a7d231da)
+
+![image](https://github.com/user-attachments/assets/1f15f140-4ccc-4e0a-bdfa-448a63c6e181)
+
+![image](https://github.com/user-attachments/assets/082fd138-1222-47d2-b694-2acaec3e1e61)
 
 ### Histogram Equalization of Grayscale Image.
 
+![image](https://github.com/user-attachments/assets/8189e4cd-ea78-40ee-99ee-9017aa458288)
 
+![image](https://github.com/user-attachments/assets/29c7c143-753d-4e18-9d06-d36ab66cdb3c)
 
 
 ## Result: 
