@@ -80,9 +80,6 @@ cv2.destroyAllWindows()
 
 ![image](https://github.com/user-attachments/assets/39204acc-790b-488d-8c76-ca8c110b456b)
 
-![image](https://github.com/user-attachments/assets/5f79b7fa-f016-4bb4-a1f8-92c2990aedd1)
-
-
 ### Histogram of Grayscale Image and any channel of Color Image
 
 ![image](https://github.com/user-attachments/assets/c913b3ad-6e61-4a7e-9241-802e647e8608)
